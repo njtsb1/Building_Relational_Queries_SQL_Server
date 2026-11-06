@@ -1,0 +1,31 @@
+### Windows (System generated files)
+Thumbs.db
+Desktop.ini
+
+### Code Editors & IDEs
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+
+### Build & Binaries (.NET / C#)
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+
+### Database (SQL Server / LocalDB)
+*.mdf
+*.ldf
+*.ndf
+*.sdc
+*.dbmdl
+
+### Temporary Files & Logs
+*.log
+*.tmp
+.attachments/
