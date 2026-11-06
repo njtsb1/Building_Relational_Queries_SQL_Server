@@ -15,7 +15,7 @@ You are responsible for the database of a movie website, which stores informatio
 You will need to perform 12 database queries, each returning a specific type of information.
 Your database is modeled as follows:
 
-![Database diagram](docs/assets/diagram.png)
+![Database diagram](docs/assets/diagram.jpg)
 
 The tables are described as follows:
 
@@ -53,7 +53,7 @@ You are to create several queries designed to return the data specified below. E
 SELECT Name, Year FROM Movies;
 ```
 
-![Exercise 1](docs/assets/01.png)
+![Exercise 1](docs/assets/01.jpg)
 
 ## 2 - Retrieve the names and release years of the films, sorted in ascending order by year
 
@@ -63,7 +63,7 @@ FROM Movies
 ORDER BY Year ASC;
 ```
 
-![Exercise 2](docs/assets/02.png)
+![Exercise 2](docs/assets/02.jpg)
 
 ## 3 - Retrieve the film "Double Team," including its name, release year, and duration
 
@@ -73,7 +73,7 @@ FROM Movies
 WHERE Name = 'Double Team';
 ```
 
-![Exercise 3](docs/assets/03.png)
+![Exercise 3](docs/assets/03.jpg)
 
 ## 4 - Retrieve the films released in 1997
 
@@ -83,7 +83,7 @@ FROM Movies
 WHERE Year = 1997;
 ```
 
-![Exercise 4](docs/assets/04.png)
+![Exercise 4](docs/assets/04.jpg)
 
 ## 5 - Retrieve the films released AFTER the year 1996
 
@@ -93,7 +93,7 @@ FROM Movies
 WHERE Year > 1996;
 ```
 
-![Exercise 5](docs/assets/05.png)
+![Exercise 5](docs/assets/05.jpg)
 
 ## 6 - Retrieve the films with a duration greater than 100 and less than 150, sorted by duration in ascending order
 
@@ -104,7 +104,7 @@ WHERE Duration > 100 AND Duration < 150
 ORDER BY Duration ASC;
 ```
 
-![Exercise 6](docs/assets/06.png)
+![Exercise 6](docs/assets/06.jpg)
 
 ## 7 - Retrieve the number of films released per year, grouped by year, and sorted by duration in descending order
 
@@ -120,7 +120,7 @@ ORDER BY
     Quantity DESC;
 ```
 
-![Exercise 7](docs/assets/07.png)
+![Exercise 7](docs/assets/07.jpg)
 
 ## 8 - Retrieve the male actors, returning their first and last names
 
@@ -134,7 +134,7 @@ WHERE
     [Gender] = 'M';
 ```
 
-![Exercise 8](docs/assets/08.png)
+![Exercise 8](docs/assets/08.jpg)
 
 ## 9 - Retrieve the male actors, returning their first and last names, sorted by first name
 
@@ -150,7 +150,7 @@ ORDER BY
     [FirstName] ASC;
 ```
 
-![Exercise 9](docs/assets/09.png)
+![Exercise 9](docs/assets/09.jpg)
 
 ## 10 - Retrieve the film names and their genres
 
@@ -166,7 +166,7 @@ INNER JOIN
     [dbo].[Genders] g ON mg.[IdGender] = g.[Id];
 ```
 
-![Exercise 10](docs/assets/10.png)
+![Exercise 10](docs/assets/10.jpg)
 
 ## 11 - Retrieve the film names and their genres, specifically for the "Action" genre
 
@@ -184,7 +184,7 @@ WHERE
     g.[Gender] = 'Action';
 ```
 
-![Exercise 11](docs/assets/11.png)
+![Exercise 11](docs/assets/11.jpg)
 
 ## 12 - Retrieve the film names and the actors involved, including their first names, last names, and roles
 
@@ -202,7 +202,7 @@ INNER JOIN
     [dbo].[Actors] a ON fc.[IdActor] = a.[Id];
 ```
 
-![Exercise 12](docs/assets/12.png)
+![Exercise 12](docs/assets/12.jpg)
 
 See [original repository](https://github.com/digitalinnovationone/trilha-net-banco-de-dados-desafio).
 

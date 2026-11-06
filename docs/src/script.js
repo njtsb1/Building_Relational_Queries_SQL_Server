@@ -118,7 +118,7 @@ function setupCarousel() {
     moviesData.forEach(movie => {
         const li = document.createElement('li');
         li.className = 'carousel-slide';
-        li.innerHTML = `<img src="docs/assets/${movie.id}.png" alt="${movie.name}">`;
+        li.innerHTML = `<img src="assets/${movie.id}.png" alt="${movie.name}">`;
         carouselTrack.appendChild(li);
     });
 }
