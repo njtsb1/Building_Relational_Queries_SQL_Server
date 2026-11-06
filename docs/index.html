@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Catalog & Queries</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-container">
+            <h1 data-i18n="appTitle">Movies Catalog</h1>
+            <div class="controls">
+                <label for="langSelect" class="sr-only" data-i18n="ariaLanguage">Select Language</label>
+                <select id="langSelect" class="lang-select">
+                    <option value="en">EN-US</option>
+                    <option value="pt">PT-BR</option>
+                    <option value="es">ES-ES</option>
+                </select>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="icon-sun" aria-hidden="true">☀️</span>
+                    <span class="icon-moon" aria-hidden="true">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <!-- Carousel Section -->
+        <section class="carousel-section" aria-labelledby="carouselTitle">
+            <h2 id="carouselTitle" class="sr-only" data-i18n="carouselHeading">Featured Movies Carousel</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Previous slide">❮</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track" id="carouselTrack"></ul>
+                </div>
+                <button class="carousel-btn next" id="nextBtn" aria-label="Next slide">❯</button>
+            </div>
+        </section>
+
+        <!-- Search & Filter Section -->
+        <section class="filter-section" aria-labelledby="searchTitle">
+            <h2 id="searchTitle" data-i18n="searchSectionTitle">Search and Advanced Filters</h2>
+            <div class="filter-grid">
+                <div class="input-group">
+                    <label for="searchInput" data-i18n="searchLabel">Search by title, actor, or role:</label>
+                    <input type="text" id="searchInput" placeholder="Type here...">
+                </div>
+                <div class="input-group">
+                    <label for="genreFilter" data-i18n="genreLabel">Genre:</label>
+                    <select id="genreFilter">
+                        <option value="" data-i18n="all">All</option>
+                        <option value="Action">Action</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="sortFilter" data-i18n="sortLabel">Sort By:</label>
+                    <select id="sortFilter">
+                        <option value="abc-asc" data-i18n="sortAbcAsc">Alphabetical (A-Z)</option>
+                        <option value="abc-desc" data-i18n="sortAbcDesc">Alphabetical (Z-A)</option>
+                        <option value="year-asc" data-i18n="sortYearAsc">Year (Ascending)</option>
+                        <option value="year-desc" data-i18n="sortYearDesc">Year (Descending)</option>
+                        <option value="duration-asc" data-i18n="sortDurationAsc">Duration (Shortest)</option>
+                        <option value="duration-desc" data-i18n="sortDurationDesc">Duration (Longest)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Grid -->
+        <section class="results-section" aria-labelledby="resultsTitle">
+            <h2 id="resultsTitle" data-i18n="resultsHeading">Movies Found</h2>
+            <div class="movies-grid" id="moviesGrid"></div>
+        </section>
+    </main>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
