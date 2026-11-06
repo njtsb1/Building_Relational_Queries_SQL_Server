@@ -170,7 +170,7 @@ function renderMovies() {
         const card = document.createElement('article');
         card.className = 'movie-card';
         card.innerHTML = `
-            <img src="docs/assets/${movie.id}.png" alt="${movie.name}">
+            <img src="assets/${movie.id}.png" alt="${movie.name}">
             <div class="movie-info">
                 <h3>${movie.name}</h3>
                 <p><strong>${i18n[currentLang].yearText}</strong> ${movie.year}</p>
