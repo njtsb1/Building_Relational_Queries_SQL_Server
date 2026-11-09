@@ -25,4 +25,6 @@ The schema features data persistence normalization covering:
 - **Persistent Themes:** Seamless Light and Dark modes using real-time CSS structural properties.
 - **Full Internationalization:** Multi-dictionary framework supporting switching between EN-US, PT-BR, and ES-ES locales.
 
+![Screenshot web demo](assets/Screenshot_web_demo.png)
+
 [LICENSE](./LICENSE)
